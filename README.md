@@ -65,3 +65,17 @@ O dicionário dos dados também está disponível no website: "http://insideairb
 
  9. **Apresentação e Discussão:**
     - Apresente os resultados do projeto para a turma, enfatizando os aspectos de engenharia de dados, qualidade de dados e uso de ferramentas como dbt, Great Expectations e o armazenamento em um banco de dados PostgreSQL nas camadas "bronze", "silver" e "gold".
+
+Começamos montando um ambiente sólido usando o Docker para criar um banco de dados PostgreSQL. Utilizamos a arquitetura medalhão - camadas bronze (dados brutos), prata (dados tratados) e ouro (dados refinados) - para estruturar os dados. Na etapa inicial, fizemos a aquisição dos dados do 'Inside Airbnb' para a cidade do Rio de Janeiro e os armazenamos na camada 'bronze' do PostgreSQL.
+
+Avançamos para a fase de limpeza e padronização na camada 'prata'. Aqui, a biblioteca ydata_profiling (anteriormente conhecida como pandas_profiling) desempenhou um papel crucial, ajudando-nos a lidar com valores ausentes, duplicatas, outliers e a realizar uma limpeza textual minuciosa. Além disso, padronizamos e corrigimos os formatos das colunas para garantir consistência nos dados.
+
+A qualidade dos dados foi um foco constante. Através da biblioteca Great Expectation estabelecemos métricas rigorosas de integridade, precisão e consistência para os dados da camada 'bronze', implementando verificações e um sistema de monitoramento contínuo na camada 'prata' para garantir a qualidade e conformidade dos dados.
+
+A utilização da ferramenta dbt (Data Build Tool) foi essencial para as transformações de dados nas camadas 'prata' e 'ouro'. Com o dbt, realizamos as transformações necessárias, aplicando agregações especializadas na camada 'ouro' para obter insights analíticos mais profundos.
+
+Mantivemos um controle de versão dos modelos relacionados a essas camadas e automatizamos as execuções das transformações para otimizar o processo.
+
+Ao longo desse projeto, a combinação do Docker, PostgreSQL, ydata_profiling (pandas_profiling), dbt e outras ferramentas como Great Expectations nos permitiu não apenas explorar os dados do Airbnb, mas também compreender a importância da qualidade, estruturação e análise aprofundada para insights robustos.
+
+Por fim, não pude deixar de fazer um mapa com as acomodações e outras informações necessárias, utilizando a biblioteca Folium. Otimizei o processamento do mapa ao realizar a clusterização das acomodações, garantindo uma visualização mais eficiente e dinâmica."
