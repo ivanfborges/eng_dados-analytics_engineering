@@ -1,0 +1,7 @@
+data/raw/
+data/processed/
+reports/generated/
+.venv*/
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,54 @@
+{
+  "snapshot": "2026-06-24",
+  "retrieved_on": "2026-09-16",
+  "source": "Inside Airbnb",
+  "license": "CC BY 4.0",
+  "sources": [
+    {
+      "file": "listings.csv.gz",
+      "url": "https://data.insideairbnb.com/brazil/rj/rio-de-janeiro/2026-06-24/data/listings.csv.gz",
+      "bytes": 23740232,
+      "sha256": "f4f5fb9389d3abdf89b73fcd26f0ad180c5b11447ca6f7580350deb165a916c2"
+    },
+    {
+      "file": "neighbourhoods.geojson",
+      "url": "https://data.insideairbnb.com/brazil/rj/rio-de-janeiro/2026-06-24/visualisations/neighbourhoods.geojson",
+      "bytes": 2464599,
+      "sha256": "5659a536788718f57e749f90eeb911caab870b07674592df5b1d70df9fc1d2e2"
+    }
+  ],
+  "structural_audit": {
+    "rows": 48713,
+    "columns": 90,
+    "unique_listing_ids": 48713,
+    "unique_hosts": 27688,
+    "scrape_dates": {
+      "2026-06-25": 23390,
+      "2026-06-26": 21410,
+      "2026-07-01": 3913
+    },
+    "price_status": {
+      "missing": 4171,
+      "positive": 44542
+    },
+    "invalid_world_coordinates": 0,
+    "neighbourhood_features": 160,
+    "rows_without_matching_neighbourhood_name": 0,
+    "missing_candidate_features": {
+      "accommodates": 0,
+      "bathrooms": 7424,
+      "bedrooms": 7099,
+      "beds": 5282,
+      "host_id": 0,
+      "id": 0,
+      "last_scraped": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "minimum_nights": 7,
+      "neighbourhood_cleansed": 0,
+      "property_type": 0,
+      "room_type": 0
+    }
+  },
+  "scope": "Structural checks only; no EDA, model fitting or holdout evaluation."
+}
