@@ -1,0 +1,6 @@
+# Implementation details frozen before ML fitting
+
+The original candidate list and selection rule in docs/baselines/protocol.json are unchanged.
+Ridge uses the deterministic lsqr solver, tolerance 1e-6 and maximum 10,000 iterations. All numeric missingness indicators exist even when a field is complete in a fitting fold; an entirely missing column is filled with zero. Median imputation and scaling are fitted in each fold. One-hot output is dense for both algorithms. HistGradientBoosting categorical_features=None because categoricals are already one-hot encoded. Unknown categories become all-zero vectors. No rare-category aggregation is used. Thread pools are limited to two threads for local resource control.
+
+Versioned requirements-model-lock.txt adds scikit-learn and its dependencies while preserving all EDA package pins. models.py and the dependency lock have LF endings to preserve provenance hashes across checkouts. Tests passed before actual-data fitting. Validation is loaded only after selection and fitting of the frozen chosen configuration; final-test targets are excluded from this delivery.

@@ -1,1 +1,4 @@
 docs/baselines/*.json text eol=lf
+rio/models.py text eol=lf
+requirements-model-lock.txt text eol=lf
+docs/selection/*.json text eol=lf
