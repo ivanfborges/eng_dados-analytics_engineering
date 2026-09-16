@@ -4,12 +4,13 @@
 
 Estudo aplicado de Ciência de Dados: **quanto as características do imóvel e a localização ajudam a estimar o preço anunciado por noite para anúncios de anfitriões ausentes do treino, dentro de um snapshot do Rio?**
 
-**Estado:** análise exploratória e geoespacial do treino concluída; partições por anfitrião congeladas. Modelagem é a próxima etapa. O teste final permanece reservado; ainda não há desempenho preditivo validado nem implantação em produção.
+**Estado:** EDA e dois baselines de mediana fora da amostra concluídos; partições e protocolo de comparação congelados. Próximo passo: os quatro candidatos de ML. O teste final permanece reservado; ainda não há desempenho preditivo validado nem implantação em produção.
 
 O snapshot identificado como 24/06/2026 contém 48.713 anúncios e 27.688 anfitriões. Há 44.542 preços presentes e positivos e 4.171 ausentes. O nome do snapshot não é a data de cada observação: a coleta efetiva varia de 25/06 a 01/07. São verificações estruturais, não resultados de modelos.
 
 ## Documentação
 
+- [Baselines, incerteza e comparação planejada dos modelos](docs/BASELINES.pt-BR.md)
 - [Exploração do treino: resultados, mapas e reprodução](docs/EDA.pt-BR.md)
 - [Protocolo, contrato de dados e avaliação](docs/STUDY.pt-BR.md)
 - [Manifesto da fonte e auditoria estrutural](docs/snapshot.json)
@@ -36,7 +37,7 @@ Mediana do preço anunciado: R$ 454,97; média: R$ 875,69. Preços ausentes afet
 
 ![Medianas dos bairros no treino](docs/eda/neighbourhood_prices.png)
 
-O [relatório de EDA](docs/EDA.pt-BR.md) detalha limites da população, correção geométrica, partições congeladas e ambiente isolado dos 16 testes sintéticos.
+O [relatório de EDA](docs/EDA.pt-BR.md) detalha limites da população, correção geométrica, partições congeladas e ambiente isolado dos testes sintéticos.
 
 ## Origem acadêmica e evolução
 

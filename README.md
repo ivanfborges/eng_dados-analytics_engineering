@@ -4,12 +4,13 @@
 
 An applied data science study asking: **how well can property characteristics and location estimate advertised nightly prices for listings from hosts unseen during training, within one Rio de Janeiro snapshot?**
 
-**Status:** training-only exploratory and geospatial analysis complete; host partitions are frozen. Modeling is next. The final test remains reserved; no predictive performance or production deployment is claimed.
+**Status:** training EDA and two out-of-fold median baselines complete; host partitions and the ML comparison protocol are frozen. The four ML candidates are next. The final test remains reserved; no predictive performance or production deployment is claimed.
 
 The June 24, 2026 Inside Airbnb snapshot contains 48,713 listings and 27,688 hosts. Prices are present and positive for 44,542 listings; 4,171 lack a price. Snapshot labels are not observation timestamps: actual scrape dates range from June 25 to July 1. These are structural checks, not model results.
 
 ## Read the study
 
+- [Baselines, uncertainty and frozen model comparison](docs/BASELINES.md)
 - [Training exploration: findings, maps and reproducible execution](docs/EDA.md)
 - [Study protocol, data contract and evaluation plan](docs/STUDY.md)
 - [Source manifest and structural audit](docs/snapshot.json)
@@ -36,7 +37,7 @@ Median listed price: BRL 454.97; mean: BRL 875.69. Missing prices affect 8.45% o
 
 ![Training neighbourhood medians](docs/eda/neighbourhood_prices.png)
 
-See the [EDA report](docs/EDA.md) for population limits, geometry repair, frozen partitions and the isolated environment used by the 16 synthetic tests.
+See the [EDA report](docs/EDA.md) for population limits, geometry repair, frozen partitions and the isolated environment used by the synthetic tests.
 
 ## Academic foundation and current scope
 

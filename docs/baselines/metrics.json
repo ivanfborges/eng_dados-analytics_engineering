@@ -1,0 +1,339 @@
+{
+  "protocol_sha256": "c34826d1464c7accf520b71af14b0c5165c1e7d4db92a9a7d837ceac88a584ca",
+  "training_sha256": "45dc4e377c77a2c907562f7e0e8fe321608222a3889063d5a589265dc536a52e",
+  "scope": "Training-only out-of-fold predictions. Validation and final test remain unused.",
+  "versions": {
+    "python": "3.11.14",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5"
+  },
+  "bootstrap_note": "Host resampling conditional on fixed OOF predictions; excludes model refitting and neighbourhood-cluster uncertainty.",
+  "evaluations": {
+    "host": {
+      "evaluated_rows": 31636,
+      "evaluated_hosts": 17912,
+      "coverage": 1.0,
+      "folds": [
+        {
+          "fold": 0,
+          "fitting_rows": 25330,
+          "fitting_hosts": 14343,
+          "evaluation_rows": 6306,
+          "evaluation_hosts": 3569,
+          "purged_fitting_rows": 0,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 522.633694893752,
+              "median_absolute_error_brl": 195.14,
+              "rmse_brl": 1818.9143658950204,
+              "rmsle": 0.8432061807618686,
+              "host_weighted_mae_brl": 526.8720394570842
+            },
+            "room_median": {
+              "mae_brl": 507.9316555661275,
+              "median_absolute_error_brl": 175.5,
+              "rmse_brl": 1813.0141546331465,
+              "rmsle": 0.7943977318703137,
+              "host_weighted_mae_brl": 519.3541976445537
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "fitting_rows": 25262,
+          "fitting_hosts": 14335,
+          "evaluation_rows": 6374,
+          "evaluation_hosts": 3577,
+          "purged_fitting_rows": 0,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 539.282012864763,
+              "median_absolute_error_brl": 189.89,
+              "rmse_brl": 2456.924576452723,
+              "rmsle": 0.8142223755282527,
+              "host_weighted_mae_brl": 539.4321627480763
+            },
+            "room_median": {
+              "mae_brl": 530.3916834013178,
+              "median_absolute_error_brl": 178.20999999999998,
+              "rmse_brl": 2453.0038306499364,
+              "rmsle": 0.78677510891651,
+              "host_weighted_mae_brl": 532.4829206884281
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fitting_rows": 25344,
+          "fitting_hosts": 14390,
+          "evaluation_rows": 6292,
+          "evaluation_hosts": 3522,
+          "purged_fitting_rows": 0,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 546.2321932612841,
+              "median_absolute_error_brl": 192.16500000000002,
+              "rmse_brl": 7374.380587753348,
+              "rmsle": 0.8038717646132503,
+              "host_weighted_mae_brl": 641.0701507129291
+            },
+            "room_median": {
+              "mae_brl": 537.9220613477431,
+              "median_absolute_error_brl": 187.12500000000003,
+              "rmse_brl": 7372.958702642125,
+              "rmsle": 0.7686131600218119,
+              "host_weighted_mae_brl": 634.613768889272
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fitting_rows": 25267,
+          "fitting_hosts": 14233,
+          "evaluation_rows": 6369,
+          "evaluation_hosts": 3679,
+          "purged_fitting_rows": 0,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 653.4548343539018,
+              "median_absolute_error_brl": 193.23000000000002,
+              "rmse_brl": 2222.908444124441,
+              "rmsle": 0.9053974718891173,
+              "host_weighted_mae_brl": 505.82612533622796
+            },
+            "room_median": {
+              "mae_brl": 641.649474014759,
+              "median_absolute_error_brl": 180.67000000000002,
+              "rmse_brl": 2217.0803807498755,
+              "rmsle": 0.8753819204516152,
+              "host_weighted_mae_brl": 498.15120867121254
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "fitting_rows": 25341,
+          "fitting_hosts": 14347,
+          "evaluation_rows": 6295,
+          "evaluation_hosts": 3565,
+          "purged_fitting_rows": 0,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 660.3459253375695,
+              "median_absolute_error_brl": 190.07999999999998,
+              "rmse_brl": 8048.825271879662,
+              "rmsle": 0.8301481339906255,
+              "host_weighted_mae_brl": 486.06991977065667
+            },
+            "room_median": {
+              "mae_brl": 651.213525019857,
+              "median_absolute_error_brl": 182.47999999999996,
+              "rmse_brl": 8046.883635496087,
+              "rmsle": 0.8002805199035562,
+              "host_weighted_mae_brl": 480.44480384199016
+            }
+          }
+        }
+      ],
+      "pooled_metrics": {
+        "global_median": {
+          "mae_brl": 584.4207873941081,
+          "median_absolute_error_brl": 192.25000000000003,
+          "rmse_brl": 5155.294433636929,
+          "rmsle": 0.840224945775353,
+          "host_weighted_mae_brl": 539.3913468556003,
+          "mae_host_bootstrap_95ci": [
+            498.21354709547916,
+            703.527579870427
+          ]
+        },
+        "room_median": {
+          "mae_brl": 573.85237893539,
+          "median_absolute_error_brl": 181.16500000000002,
+          "rmse_brl": 5152.99059481375,
+          "rmsle": 0.806048647182647,
+          "host_weighted_mae_brl": 532.5402107593803,
+          "mae_host_bootstrap_95ci": [
+            487.7673167027941,
+            692.7660469001211
+          ]
+        }
+      },
+      "room_minus_global_mae_brl": -10.568408458717915,
+      "paired_delta_host_bootstrap_95ci": [
+        -12.148915744116021,
+        -8.841538338734853
+      ]
+    },
+    "spatial": {
+      "evaluated_rows": 31636,
+      "evaluated_hosts": 17912,
+      "coverage": 1.0,
+      "folds": [
+        {
+          "fold": 0,
+          "fitting_rows": 10218,
+          "fitting_hosts": 7303,
+          "evaluation_rows": 19320,
+          "evaluation_hosts": 10609,
+          "purged_fitting_rows": 2098,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 697.8837862318841,
+              "median_absolute_error_brl": 182.82,
+              "rmse_brl": 6471.131999597106,
+              "rmsle": 0.9311779669734996,
+              "host_weighted_mae_brl": 630.7947714264017
+            },
+            "room_median": {
+              "mae_brl": 685.9029358178053,
+              "median_absolute_error_brl": 164.0,
+              "rmse_brl": 6469.254777345242,
+              "rmsle": 0.8998528425233924,
+              "host_weighted_mae_brl": 620.5186861030339
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "fitting_rows": 28210,
+          "fitting_hosts": 16809,
+          "evaluation_rows": 1420,
+          "evaluation_hosts": 1103,
+          "purged_fitting_rows": 2006,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 378.15172535211263,
+              "median_absolute_error_brl": 199.5,
+              "rmse_brl": 1114.998734504903,
+              "rmsle": 0.8435857413282863,
+              "host_weighted_mae_brl": 405.06403799522224
+            },
+            "room_median": {
+              "mae_brl": 359.15722887323943,
+              "median_absolute_error_brl": 183.0,
+              "rmse_brl": 1107.7224466961907,
+              "rmsle": 0.7642791519003688,
+              "host_weighted_mae_brl": 394.8605677391386
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fitting_rows": 25378,
+          "fitting_hosts": 15853,
+          "evaluation_rows": 3189,
+          "evaluation_hosts": 2059,
+          "purged_fitting_rows": 3069,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 365.83004546879897,
+              "median_absolute_error_brl": 222.77499999999998,
+              "rmse_brl": 1373.1301471516763,
+              "rmsle": 0.8286666897687283,
+              "host_weighted_mae_brl": 393.09435236403067
+            },
+            "room_median": {
+              "mae_brl": 370.4465255566008,
+              "median_absolute_error_brl": 228.67000000000002,
+              "rmse_brl": 1371.8353710033634,
+              "rmsle": 0.7997122948240121,
+              "host_weighted_mae_brl": 403.6193299922251
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fitting_rows": 21012,
+          "fitting_hosts": 13324,
+          "evaluation_rows": 6808,
+          "evaluation_hosts": 4588,
+          "purged_fitting_rows": 3816,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 400.40199911868393,
+              "median_absolute_error_brl": 188.62,
+              "rmse_brl": 1477.49830480907,
+              "rmsle": 0.7681100124023067,
+              "host_weighted_mae_brl": 438.66697405081254
+            },
+            "room_median": {
+              "mae_brl": 392.07071460047,
+              "median_absolute_error_brl": 182.71000000000004,
+              "rmse_brl": 1473.169381668956,
+              "rmsle": 0.734553975352323,
+              "host_weighted_mae_brl": 432.13939702052124
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "fitting_rows": 29805,
+          "fitting_hosts": 17214,
+          "evaluation_rows": 899,
+          "evaluation_hosts": 698,
+          "purged_fitting_rows": 932,
+          "host_overlap": 0,
+          "metrics": {
+            "global_median": {
+              "mae_brl": 1222.0261067853173,
+              "median_absolute_error_brl": 278.76,
+              "rmse_brl": 3515.9990524697355,
+              "rmsle": 1.1872203085116602,
+              "host_weighted_mae_brl": 1018.0410219654317
+            },
+            "room_median": {
+              "mae_brl": 1246.7958843159065,
+              "median_absolute_error_brl": 295.67,
+              "rmse_brl": 3518.880692884277,
+              "rmsle": 1.2507218423220914,
+              "host_weighted_mae_brl": 1050.0750158589526
+            }
+          }
+        }
+      ],
+      "pooled_metrics": {
+        "global_median": {
+          "mae_brl": 600.93755515868,
+          "median_absolute_error_brl": 194.0,
+          "rmse_brl": 5161.4144508579675,
+          "rmsle": 0.8931470332891913,
+          "host_weighted_mae_brl": 555.4247525772677,
+          "mae_host_bootstrap_95ci": [
+            514.319486002756,
+            720.8170499100753
+          ]
+        },
+        "room_median": {
+          "mae_brl": 592.1446731571629,
+          "median_absolute_error_brl": 182.0,
+          "rmse_brl": 5159.661538795112,
+          "rmsle": 0.863571510510537,
+          "host_weighted_mae_brl": 549.6150267624555,
+          "mae_host_bootstrap_95ci": [
+            505.24699915220134,
+            711.9468098910955
+          ]
+        }
+      },
+      "room_minus_global_mae_brl": -8.792882001517246,
+      "paired_delta_host_bootstrap_95ci": [
+        -10.18471530346308,
+        -7.347787575720882
+      ]
+    }
+  },
+  "private_artifact_sha256": {
+    "host_oof.csv": "f65c38ffa3ea8bc86f81848831763831a8ed1d09b28f0d5a003f40d5b47dbacd",
+    "spatial_oof.csv": "c37923d08cfc791b57b184aecaa67a37498274a374e0125e7161b832a635d29c"
+  }
+}
