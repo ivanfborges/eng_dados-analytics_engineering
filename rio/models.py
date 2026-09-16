@@ -56,6 +56,11 @@ class MedianRegressor(RegressorMixin, BaseEstimator):
         return np.full(len(X), self.global_)
 
 
+class NonnegativeHistGradientBoostingRegressor(HistGradientBoostingRegressor):
+    def predict(self, X):
+        return np.maximum(0, super().predict(X))
+
+
 def make_model(name, protocol):
     if name in {'global_median','room_median'}:
         return MedianRegressor(by_room=name == 'room_median')
@@ -79,7 +84,7 @@ def make_model(name, protocol):
         estimator = Ridge(alpha=protocol['ridge']['alpha'], solver='lsqr', tol=1e-6, max_iter=10000)
     else:
         parameters = {k:v for k,v in protocol['histgb'].items() if k != 'target'}
-        estimator = HistGradientBoostingRegressor(**parameters, categorical_features=None)
+        estimator = NonnegativeHistGradientBoostingRegressor(**parameters, categorical_features=None)
     pipeline = Pipeline([('clean', SemanticCleaner(numeric, categorical)),
                          ('preprocess', preprocess), ('estimator', estimator)])
     if name.startswith('ridge'):
