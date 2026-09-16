@@ -4,12 +4,13 @@
 
 Estudo aplicado de Ciência de Dados: **quanto as características do imóvel e a localização ajudam a estimar o preço anunciado por noite para anúncios de anfitriões ausentes do treino, dentro de um snapshot do Rio?**
 
-**Estado:** escopo e auditoria da fonte concluídos; análise exploratória e modelos são as próximas etapas. Ainda não há desempenho preditivo validado nem implantação em produção.
+**Estado:** análise exploratória e geoespacial do treino concluída; partições por anfitrião congeladas. Modelagem é a próxima etapa. O teste final permanece reservado; ainda não há desempenho preditivo validado nem implantação em produção.
 
 O snapshot identificado como 24/06/2026 contém 48.713 anúncios e 27.688 anfitriões. Há 44.542 preços presentes e positivos e 4.171 ausentes. O nome do snapshot não é a data de cada observação: a coleta efetiva varia de 25/06 a 01/07. São verificações estruturais, não resultados de modelos.
 
 ## Documentação
 
+- [Exploração do treino: resultados, mapas e reprodução](docs/EDA.pt-BR.md)
 - [Protocolo, contrato de dados e avaliação](docs/STUDY.pt-BR.md)
 - [Manifesto da fonte e auditoria estrutural](docs/snapshot.json)
 - [Descrição acadêmica original preservada](docs/ACADEMIC-ORIGINAL.pt-BR.md)
@@ -25,10 +26,17 @@ data/raw/2026-06-24/neighbourhoods.geojson
 
 ```sh
 python scripts/audit_snapshot.py
-python -m unittest discover -s tests -v
 ```
 
 Compare hashes e contagens com o manifesto. Uma alteração no arquivo da fonte exige revisão de versão. A data de obtenção registrada é a da aquisição original, não a da reexecução. Os dados brutos estão ignorados pelo Git. A auditoria não precisa de PostgreSQL nem das dependências antigas.
+
+## Resultados do treino
+
+Mediana do preço anunciado: R$ 454,97; média: R$ 875,69. Preços ausentes afetam 8,45% dos anúncios de treino e coincidem com maior ausência de camas e banheiros. O mapa cobre 53 bairros com suporte suficiente. São resultados descritivos do treino, não desempenho de modelos.
+
+![Medianas dos bairros no treino](docs/eda/neighbourhood_prices.png)
+
+O [relatório de EDA](docs/EDA.pt-BR.md) detalha limites da população, correção geométrica, partições congeladas e ambiente isolado dos 16 testes sintéticos.
 
 ## Origem acadêmica e evolução
 

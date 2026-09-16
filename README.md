@@ -4,12 +4,13 @@
 
 An applied data science study asking: **how well can property characteristics and location estimate advertised nightly prices for listings from hosts unseen during training, within one Rio de Janeiro snapshot?**
 
-**Status:** scope and source audit complete; exploratory analysis and modeling are next. No predictive performance or production deployment is claimed.
+**Status:** training-only exploratory and geospatial analysis complete; host partitions are frozen. Modeling is next. The final test remains reserved; no predictive performance or production deployment is claimed.
 
 The June 24, 2026 Inside Airbnb snapshot contains 48,713 listings and 27,688 hosts. Prices are present and positive for 44,542 listings; 4,171 lack a price. Snapshot labels are not observation timestamps: actual scrape dates range from June 25 to July 1. These are structural checks, not model results.
 
 ## Read the study
 
+- [Training exploration: findings, maps and reproducible execution](docs/EDA.md)
 - [Study protocol, data contract and evaluation plan](docs/STUDY.md)
 - [Source manifest and structural audit](docs/snapshot.json)
 - [Original academic description, preserved in Portuguese](docs/ACADEMIC-ORIGINAL.pt-BR.md)
@@ -25,10 +26,17 @@ data/raw/2026-06-24/neighbourhoods.geojson
 
 ```sh
 python scripts/audit_snapshot.py
-python -m unittest discover -s tests -v
 ```
 
 Compare file hashes and counts with the manifest. A changed upstream file is a new source version and requires review. The recorded retrieval date describes the original acquisition, not the time you rerun the audit. Raw files are ignored by Git. No PostgreSQL server or historical dependencies are needed for this audit.
+
+## Training findings
+
+Median listed price: BRL 454.97; mean: BRL 875.69. Missing prices affect 8.45% of training listings and coincide with much greater missingness in beds and bathrooms. The map covers 53 neighbourhoods with sufficient support. These are descriptive training results, not model performance.
+
+![Training neighbourhood medians](docs/eda/neighbourhood_prices.png)
+
+See the [EDA report](docs/EDA.md) for population limits, geometry repair, frozen partitions and the isolated environment used by the 16 synthetic tests.
 
 ## Academic foundation and current scope
 

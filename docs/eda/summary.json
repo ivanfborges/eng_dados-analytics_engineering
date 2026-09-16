@@ -1,0 +1,1336 @@
+{
+  "scope": "Training only; validation/test targets not loaded by EDA.",
+  "versions": {
+    "python": "3.11.14",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "shapely": "2.1.2",
+    "geos": "3.13.1",
+    "matplotlib": "3.11.2"
+  },
+  "training_sha256": "45dc4e377c77a2c907562f7e0e8fe321608222a3889063d5a589265dc536a52e",
+  "training_rows": 34557,
+  "priced_rows": 31636,
+  "missing_price_rows": 2921,
+  "missing_price_rate": 0.08452701334027839,
+  "price_summary_brl": {
+    "median": 454.97,
+    "mean": 875.6853138829183,
+    "q25": 297.0,
+    "q75": 756.0,
+    "p90": 1386.25,
+    "p99": 7411.135500000028
+  },
+  "numeric_quality": {
+    "accommodates": {
+      "missing": 0,
+      "invalid_nonmissing": 0,
+      "usable": 34557
+    },
+    "bedrooms": {
+      "missing": 5122,
+      "invalid_nonmissing": 0,
+      "usable": 29435
+    },
+    "beds": {
+      "missing": 3752,
+      "invalid_nonmissing": 0,
+      "usable": 30805
+    },
+    "bathrooms": {
+      "missing": 5210,
+      "invalid_nonmissing": 0,
+      "usable": 29347
+    },
+    "minimum_nights": {
+      "missing": 5,
+      "invalid_nonmissing": 0,
+      "usable": 34552
+    }
+  },
+  "numeric_quality_by_target_availability": {
+    "observed_price": {
+      "accommodates": {
+        "missing": 0,
+        "invalid_nonmissing": 0,
+        "usable": 31636
+      },
+      "bedrooms": {
+        "missing": 4672,
+        "invalid_nonmissing": 0,
+        "usable": 26964
+      },
+      "beds": {
+        "missing": 1189,
+        "invalid_nonmissing": 0,
+        "usable": 30447
+      },
+      "bathrooms": {
+        "missing": 2620,
+        "invalid_nonmissing": 0,
+        "usable": 29016
+      },
+      "minimum_nights": {
+        "missing": 5,
+        "invalid_nonmissing": 0,
+        "usable": 31631
+      }
+    },
+    "missing_price": {
+      "accommodates": {
+        "missing": 0,
+        "invalid_nonmissing": 0,
+        "usable": 2921
+      },
+      "bedrooms": {
+        "missing": 450,
+        "invalid_nonmissing": 0,
+        "usable": 2471
+      },
+      "beds": {
+        "missing": 2563,
+        "invalid_nonmissing": 0,
+        "usable": 358
+      },
+      "bathrooms": {
+        "missing": 2590,
+        "invalid_nonmissing": 0,
+        "usable": 331
+      },
+      "minimum_nights": {
+        "missing": 0,
+        "invalid_nonmissing": 0,
+        "usable": 2921
+      }
+    }
+  },
+  "room_types": [
+    {
+      "group": "Entire home/apt",
+      "rows": 28004,
+      "hosts": 16442,
+      "priced_rows": 25673,
+      "priced_hosts": 15141,
+      "missing_price_rate": 0.08323810884159406,
+      "median_brl": 490.71,
+      "q25_brl": 332.0,
+      "q75_brl": 814.0
+    },
+    {
+      "group": "Private room",
+      "rows": 6063,
+      "hosts": 3827,
+      "priced_rows": 5495,
+      "priced_hosts": 3459,
+      "missing_price_rate": 0.09368299521688933,
+      "median_brl": 297.0,
+      "q25_brl": 194.4,
+      "q75_brl": 513.67
+    },
+    {
+      "group": "Shared room",
+      "rows": 459,
+      "hosts": 144,
+      "priced_rows": 444,
+      "priced_hosts": 138,
+      "missing_price_rate": 0.032679738562091505,
+      "median_brl": 119.0,
+      "q25_brl": 88.0,
+      "q75_brl": 205.475
+    }
+  ],
+  "room_type_groups_suppressed": 1,
+  "neighbourhoods_source_labels": [
+    {
+      "group": "Anil",
+      "rows": 38,
+      "hosts": 29,
+      "priced_rows": 36,
+      "priced_hosts": 27,
+      "missing_price_rate": 0.05263157894736842,
+      "median_brl": 385.33500000000004,
+      "q25_brl": 261.5,
+      "q75_brl": 617.5
+    },
+    {
+      "group": "Barra da Tijuca",
+      "rows": 2665,
+      "hosts": 1689,
+      "priced_rows": 2393,
+      "priced_hosts": 1549,
+      "missing_price_rate": 0.10206378986866792,
+      "median_brl": 640.0,
+      "q25_brl": 434.0,
+      "q75_brl": 1084.2
+    },
+    {
+      "group": "Barra de Guaratiba",
+      "rows": 149,
+      "hosts": 88,
+      "priced_rows": 148,
+      "priced_hosts": 87,
+      "missing_price_rate": 0.006711409395973154,
+      "median_brl": 398.85,
+      "q25_brl": 231.915,
+      "q75_brl": 801.81
+    },
+    {
+      "group": "Botafogo",
+      "rows": 1492,
+      "hosts": 1095,
+      "priced_rows": 1328,
+      "priced_hosts": 972,
+      "missing_price_rate": 0.10991957104557641,
+      "median_brl": 384.33,
+      "q25_brl": 274.75,
+      "q75_brl": 569.9024999999999
+    },
+    {
+      "group": "Camorim",
+      "rows": 686,
+      "hosts": 353,
+      "priced_rows": 631,
+      "priced_hosts": 326,
+      "missing_price_rate": 0.08017492711370262,
+      "median_brl": 320.0,
+      "q25_brl": 241.265,
+      "q75_brl": 472.865
+    },
+    {
+      "group": "Campo Grande",
+      "rows": 142,
+      "hosts": 92,
+      "priced_rows": 136,
+      "priced_hosts": 89,
+      "missing_price_rate": 0.04225352112676056,
+      "median_brl": 224.75,
+      "q25_brl": 158.0,
+      "q75_brl": 360.92
+    },
+    {
+      "group": "Catete",
+      "rows": 313,
+      "hosts": 267,
+      "priced_rows": 284,
+      "priced_hosts": 241,
+      "missing_price_rate": 0.0926517571884984,
+      "median_brl": 334.83500000000004,
+      "q25_brl": 251.875,
+      "q75_brl": 526.75
+    },
+    {
+      "group": "Centro",
+      "rows": 2273,
+      "hosts": 1369,
+      "priced_rows": 2137,
+      "priced_hosts": 1284,
+      "missing_price_rate": 0.05983282006159261,
+      "median_brl": 278.0,
+      "q25_brl": 216.13,
+      "q75_brl": 376.0
+    },
+    {
+      "group": "Copacabana",
+      "rows": 10862,
+      "hosts": 5989,
+      "priced_rows": 9938,
+      "priced_hosts": 5534,
+      "missing_price_rate": 0.08506720677591603,
+      "median_brl": 452.67,
+      "q25_brl": 332.0,
+      "q75_brl": 685.0
+    },
+    {
+      "group": "Cosme Velho",
+      "rows": 75,
+      "hosts": 46,
+      "priced_rows": 71,
+      "priced_hosts": 42,
+      "missing_price_rate": 0.05333333333333334,
+      "median_brl": 519.24,
+      "q25_brl": 339.0,
+      "q75_brl": 1027.15
+    },
+    {
+      "group": "Curicica",
+      "rows": 72,
+      "hosts": 52,
+      "priced_rows": 65,
+      "priced_hosts": 46,
+      "missing_price_rate": 0.09722222222222222,
+      "median_brl": 294.0,
+      "q25_brl": 212.0,
+      "q75_brl": 569.0
+    },
+    {
+      "group": "Engenho Novo",
+      "rows": 49,
+      "hosts": 20,
+      "priced_rows": 47,
+      "priced_hosts": 19,
+      "missing_price_rate": 0.04081632653061224,
+      "median_brl": 114.33,
+      "q25_brl": 91.315,
+      "q75_brl": 282.0
+    },
+    {
+      "group": "Engenho de Dentro",
+      "rows": 50,
+      "hosts": 35,
+      "priced_rows": 48,
+      "priced_hosts": 34,
+      "missing_price_rate": 0.04,
+      "median_brl": 399.0,
+      "q25_brl": 252.49,
+      "q75_brl": 580.2825
+    },
+    {
+      "group": "Estácio",
+      "rows": 58,
+      "hosts": 47,
+      "priced_rows": 56,
+      "priced_hosts": 45,
+      "missing_price_rate": 0.034482758620689655,
+      "median_brl": 316.765,
+      "q25_brl": 197.805,
+      "q75_brl": 481.9925
+    },
+    {
+      "group": "Flamengo",
+      "rows": 743,
+      "hosts": 608,
+      "priced_rows": 670,
+      "priced_hosts": 550,
+      "missing_price_rate": 0.09825033647375504,
+      "median_brl": 405.5,
+      "q25_brl": 293.10249999999996,
+      "q75_brl": 579.65
+    },
+    {
+      "group": "Freguesia (Jacarepaguá)",
+      "rows": 88,
+      "hosts": 71,
+      "priced_rows": 85,
+      "priced_hosts": 68,
+      "missing_price_rate": 0.03409090909090909,
+      "median_brl": 363.33,
+      "q25_brl": 224.3,
+      "q75_brl": 909.0
+    },
+    {
+      "group": "Gamboa",
+      "rows": 46,
+      "hosts": 28,
+      "priced_rows": 41,
+      "priced_hosts": 25,
+      "missing_price_rate": 0.10869565217391304,
+      "median_brl": 211.5,
+      "q25_brl": 142.65,
+      "q75_brl": 343.0
+    },
+    {
+      "group": "Glória",
+      "rows": 279,
+      "hosts": 220,
+      "priced_rows": 248,
+      "priced_hosts": 201,
+      "missing_price_rate": 0.1111111111111111,
+      "median_brl": 393.41499999999996,
+      "q25_brl": 288.4925,
+      "q75_brl": 607.0
+    },
+    {
+      "group": "Grajaú",
+      "rows": 57,
+      "hosts": 41,
+      "priced_rows": 53,
+      "priced_hosts": 38,
+      "missing_price_rate": 0.07017543859649122,
+      "median_brl": 308.0,
+      "q25_brl": 208.5,
+      "q75_brl": 446.0
+    },
+    {
+      "group": "Guaratiba",
+      "rows": 140,
+      "hosts": 109,
+      "priced_rows": 132,
+      "priced_hosts": 103,
+      "missing_price_rate": 0.05714285714285714,
+      "median_brl": 456.58500000000004,
+      "q25_brl": 221.25,
+      "q75_brl": 944.81
+    },
+    {
+      "group": "Gávea",
+      "rows": 189,
+      "hosts": 148,
+      "priced_rows": 168,
+      "priced_hosts": 133,
+      "missing_price_rate": 0.1111111111111111,
+      "median_brl": 605.0,
+      "q25_brl": 409.625,
+      "q75_brl": 1163.0125
+    },
+    {
+      "group": "Humaitá",
+      "rows": 152,
+      "hosts": 130,
+      "priced_rows": 131,
+      "priced_hosts": 115,
+      "missing_price_rate": 0.13815789473684212,
+      "median_brl": 514.0,
+      "q25_brl": 282.5,
+      "q75_brl": 834.9
+    },
+    {
+      "group": "Ipanema",
+      "rows": 2819,
+      "hosts": 1582,
+      "priced_rows": 2584,
+      "priced_hosts": 1461,
+      "missing_price_rate": 0.0833628946434906,
+      "median_brl": 696.225,
+      "q25_brl": 494.63,
+      "q75_brl": 1084.9325
+    },
+    {
+      "group": "Itanhangá",
+      "rows": 169,
+      "hosts": 98,
+      "priced_rows": 147,
+      "priced_hosts": 86,
+      "missing_price_rate": 0.1301775147928994,
+      "median_brl": 421.78,
+      "q25_brl": 206.505,
+      "q75_brl": 1997.25
+    },
+    {
+      "group": "Jacarepaguá",
+      "rows": 1294,
+      "hosts": 948,
+      "priced_rows": 1187,
+      "priced_hosts": 871,
+      "missing_price_rate": 0.08268933539412673,
+      "median_brl": 456.5,
+      "q25_brl": 304.32,
+      "q75_brl": 815.02
+    },
+    {
+      "group": "Jardim Botânico",
+      "rows": 156,
+      "hosts": 131,
+      "priced_rows": 137,
+      "priced_hosts": 117,
+      "missing_price_rate": 0.12179487179487179,
+      "median_brl": 638.0,
+      "q25_brl": 360.0,
+      "q75_brl": 1027.33
+    },
+    {
+      "group": "Jardim Guanabara",
+      "rows": 35,
+      "hosts": 24,
+      "priced_rows": 33,
+      "priced_hosts": 24,
+      "missing_price_rate": 0.05714285714285714,
+      "median_brl": 269.0,
+      "q25_brl": 217.0,
+      "q75_brl": 434.0
+    },
+    {
+      "group": "Joá",
+      "rows": 116,
+      "hosts": 43,
+      "priced_rows": 110,
+      "priced_hosts": 43,
+      "missing_price_rate": 0.05172413793103448,
+      "median_brl": 6961.35,
+      "q25_brl": 1485.375,
+      "q75_brl": 11412.0
+    },
+    {
+      "group": "Lagoa",
+      "rows": 191,
+      "hosts": 164,
+      "priced_rows": 178,
+      "priced_hosts": 153,
+      "missing_price_rate": 0.06806282722513089,
+      "median_brl": 799.0,
+      "q25_brl": 520.8525,
+      "q75_brl": 1197.98
+    },
+    {
+      "group": "Laranjeiras",
+      "rows": 423,
+      "hosts": 351,
+      "priced_rows": 373,
+      "priced_hosts": 316,
+      "missing_price_rate": 0.1182033096926714,
+      "median_brl": 428.0,
+      "q25_brl": 284.0,
+      "q75_brl": 677.33
+    },
+    {
+      "group": "Leblon",
+      "rows": 1461,
+      "hosts": 878,
+      "priced_rows": 1319,
+      "priced_hosts": 788,
+      "missing_price_rate": 0.0971937029431896,
+      "median_brl": 797.0,
+      "q25_brl": 569.4100000000001,
+      "q75_brl": 1206.03
+    },
+    {
+      "group": "Leme",
+      "rows": 705,
+      "hosts": 481,
+      "priced_rows": 634,
+      "priced_hosts": 427,
+      "missing_price_rate": 0.10070921985815603,
+      "median_brl": 480.25,
+      "q25_brl": 319.7525,
+      "q75_brl": 760.625
+    },
+    {
+      "group": "Maracanã",
+      "rows": 100,
+      "hosts": 77,
+      "priced_rows": 85,
+      "priced_hosts": 66,
+      "missing_price_rate": 0.15,
+      "median_brl": 342.67,
+      "q25_brl": 137.7,
+      "q75_brl": 685.0
+    },
+    {
+      "group": "Méier",
+      "rows": 47,
+      "hosts": 26,
+      "priced_rows": 44,
+      "priced_hosts": 23,
+      "missing_price_rate": 0.06382978723404255,
+      "median_brl": 146.465,
+      "q25_brl": 102.75,
+      "q75_brl": 284.75
+    },
+    {
+      "group": "Paquetá",
+      "rows": 42,
+      "hosts": 30,
+      "priced_rows": 37,
+      "priced_hosts": 28,
+      "missing_price_rate": 0.11904761904761904,
+      "median_brl": 399.5,
+      "q25_brl": 297.0,
+      "q75_brl": 685.0
+    },
+    {
+      "group": "Portuguesa",
+      "rows": 36,
+      "hosts": 16,
+      "priced_rows": 35,
+      "priced_hosts": 15,
+      "missing_price_rate": 0.027777777777777776,
+      "median_brl": 155.2,
+      "q25_brl": 145.0,
+      "q75_brl": 277.25
+    },
+    {
+      "group": "Praça da Bandeira",
+      "rows": 41,
+      "hosts": 34,
+      "priced_rows": 33,
+      "priced_hosts": 28,
+      "missing_price_rate": 0.1951219512195122,
+      "median_brl": 262.67,
+      "q25_brl": 206.0,
+      "q75_brl": 456.67
+    },
+    {
+      "group": "Recreio dos Bandeirantes",
+      "rows": 1703,
+      "hosts": 1208,
+      "priced_rows": 1603,
+      "priced_hosts": 1133,
+      "missing_price_rate": 0.058719906048150326,
+      "median_brl": 457.0,
+      "q25_brl": 297.75,
+      "q75_brl": 755.87
+    },
+    {
+      "group": "Rio Comprido",
+      "rows": 99,
+      "hosts": 62,
+      "priced_rows": 93,
+      "priced_hosts": 57,
+      "missing_price_rate": 0.06060606060606061,
+      "median_brl": 319.75,
+      "q25_brl": 194.0,
+      "q75_brl": 571.0
+    },
+    {
+      "group": "Rocinha",
+      "rows": 77,
+      "hosts": 50,
+      "priced_rows": 74,
+      "priced_hosts": 48,
+      "missing_price_rate": 0.03896103896103896,
+      "median_brl": 218.3,
+      "q25_brl": 161.2725,
+      "q75_brl": 340.125
+    },
+    {
+      "group": "Santa Cruz",
+      "rows": 42,
+      "hosts": 33,
+      "priced_rows": 38,
+      "priced_hosts": 31,
+      "missing_price_rate": 0.09523809523809523,
+      "median_brl": 203.0,
+      "q25_brl": 155.875,
+      "q75_brl": 298.9575
+    },
+    {
+      "group": "Santa Teresa",
+      "rows": 1271,
+      "hosts": 799,
+      "priced_rows": 1192,
+      "priced_hosts": 754,
+      "missing_price_rate": 0.06215578284815106,
+      "median_brl": 308.28,
+      "q25_brl": 206.0,
+      "q75_brl": 514.0
+    },
+    {
+      "group": "Santo Cristo",
+      "rows": 337,
+      "hosts": 255,
+      "priced_rows": 312,
+      "priced_hosts": 239,
+      "missing_price_rate": 0.07418397626112759,
+      "median_brl": 348.0,
+      "q25_brl": 275.06,
+      "q75_brl": 445.625
+    },
+    {
+      "group": "Saúde",
+      "rows": 54,
+      "hosts": 36,
+      "priced_rows": 52,
+      "priced_hosts": 35,
+      "missing_price_rate": 0.037037037037037035,
+      "median_brl": 249.64999999999998,
+      "q25_brl": 128.0025,
+      "q75_brl": 374.0
+    },
+    {
+      "group": "São Conrado",
+      "rows": 409,
+      "hosts": 349,
+      "priced_rows": 342,
+      "priced_hosts": 293,
+      "missing_price_rate": 0.16381418092909536,
+      "median_brl": 999.5,
+      "q25_brl": 656.5,
+      "q75_brl": 1742.0725
+    },
+    {
+      "group": "São Cristóvão",
+      "rows": 135,
+      "hosts": 91,
+      "priced_rows": 123,
+      "priced_hosts": 85,
+      "missing_price_rate": 0.08888888888888889,
+      "median_brl": 309.0,
+      "q25_brl": 202.25,
+      "q75_brl": 441.6
+    },
+    {
+      "group": "Taquara",
+      "rows": 103,
+      "hosts": 87,
+      "priced_rows": 97,
+      "priced_hosts": 81,
+      "missing_price_rate": 0.05825242718446602,
+      "median_brl": 343.0,
+      "q25_brl": 228.4,
+      "q75_brl": 617.0
+    },
+    {
+      "group": "Tijuca",
+      "rows": 319,
+      "hosts": 233,
+      "priced_rows": 293,
+      "priced_hosts": 213,
+      "missing_price_rate": 0.08150470219435736,
+      "median_brl": 304.5,
+      "q25_brl": 181.0,
+      "q75_brl": 531.0
+    },
+    {
+      "group": "Urca",
+      "rows": 97,
+      "hosts": 80,
+      "priced_rows": 90,
+      "priced_hosts": 74,
+      "missing_price_rate": 0.07216494845360824,
+      "median_brl": 473.83500000000004,
+      "q25_brl": 329.10749999999996,
+      "q75_brl": 852.7
+    },
+    {
+      "group": "Vargem Grande",
+      "rows": 104,
+      "hosts": 85,
+      "priced_rows": 98,
+      "priced_hosts": 80,
+      "missing_price_rate": 0.057692307692307696,
+      "median_brl": 533.75,
+      "q25_brl": 329.04999999999995,
+      "q75_brl": 880.675
+    },
+    {
+      "group": "Vargem Pequena",
+      "rows": 134,
+      "hosts": 90,
+      "priced_rows": 122,
+      "priced_hosts": 83,
+      "missing_price_rate": 0.08955223880597014,
+      "median_brl": 363.25,
+      "q25_brl": 220.5825,
+      "q75_brl": 900.25
+    },
+    {
+      "group": "Vidigal",
+      "rows": 349,
+      "hosts": 258,
+      "priced_rows": 315,
+      "priced_hosts": 235,
+      "missing_price_rate": 0.09742120343839542,
+      "median_brl": 374.31,
+      "q25_brl": 229.0,
+      "q75_brl": 768.51
+    },
+    {
+      "group": "Vila Isabel",
+      "rows": 107,
+      "hosts": 90,
+      "priced_rows": 101,
+      "priced_hosts": 85,
+      "missing_price_rate": 0.056074766355140186,
+      "median_brl": 342.5,
+      "q25_brl": 196.0,
+      "q75_brl": 514.0
+    }
+  ],
+  "source_label_groups_suppressed": 100,
+  "geography": {
+    "crs": "WGS84 lon/lat; RFC7946 default, source has no CRS member",
+    "features": 160,
+    "repairs": [
+      {
+        "neighbourhood": "Caju",
+        "reason": "Ring Self-intersection[-43.22518 -22.874637]",
+        "method": "make_valid/linework",
+        "relative_planar_area_change": 1.267220955240763e-15
+      }
+    ],
+    "training_status_counts": {
+      "consistent": 34557
+    },
+    "map_neighbourhoods": 53,
+    "map_priced_rows": 30727,
+    "map_groups": [
+      {
+        "group": "Anil",
+        "rows": 38,
+        "hosts": 29,
+        "priced_rows": 36,
+        "priced_hosts": 27,
+        "missing_price_rate": 0.05263157894736842,
+        "median_brl": 385.33500000000004,
+        "q25_brl": 261.5,
+        "q75_brl": 617.5
+      },
+      {
+        "group": "Barra da Tijuca",
+        "rows": 2665,
+        "hosts": 1689,
+        "priced_rows": 2393,
+        "priced_hosts": 1549,
+        "missing_price_rate": 0.10206378986866792,
+        "median_brl": 640.0,
+        "q25_brl": 434.0,
+        "q75_brl": 1084.2
+      },
+      {
+        "group": "Barra de Guaratiba",
+        "rows": 149,
+        "hosts": 88,
+        "priced_rows": 148,
+        "priced_hosts": 87,
+        "missing_price_rate": 0.006711409395973154,
+        "median_brl": 398.85,
+        "q25_brl": 231.915,
+        "q75_brl": 801.81
+      },
+      {
+        "group": "Botafogo",
+        "rows": 1492,
+        "hosts": 1095,
+        "priced_rows": 1328,
+        "priced_hosts": 972,
+        "missing_price_rate": 0.10991957104557641,
+        "median_brl": 384.33,
+        "q25_brl": 274.75,
+        "q75_brl": 569.9024999999999
+      },
+      {
+        "group": "Camorim",
+        "rows": 686,
+        "hosts": 353,
+        "priced_rows": 631,
+        "priced_hosts": 326,
+        "missing_price_rate": 0.08017492711370262,
+        "median_brl": 320.0,
+        "q25_brl": 241.265,
+        "q75_brl": 472.865
+      },
+      {
+        "group": "Campo Grande",
+        "rows": 142,
+        "hosts": 92,
+        "priced_rows": 136,
+        "priced_hosts": 89,
+        "missing_price_rate": 0.04225352112676056,
+        "median_brl": 224.75,
+        "q25_brl": 158.0,
+        "q75_brl": 360.92
+      },
+      {
+        "group": "Catete",
+        "rows": 313,
+        "hosts": 267,
+        "priced_rows": 284,
+        "priced_hosts": 241,
+        "missing_price_rate": 0.0926517571884984,
+        "median_brl": 334.83500000000004,
+        "q25_brl": 251.875,
+        "q75_brl": 526.75
+      },
+      {
+        "group": "Centro",
+        "rows": 2273,
+        "hosts": 1369,
+        "priced_rows": 2137,
+        "priced_hosts": 1284,
+        "missing_price_rate": 0.05983282006159261,
+        "median_brl": 278.0,
+        "q25_brl": 216.13,
+        "q75_brl": 376.0
+      },
+      {
+        "group": "Copacabana",
+        "rows": 10862,
+        "hosts": 5989,
+        "priced_rows": 9938,
+        "priced_hosts": 5534,
+        "missing_price_rate": 0.08506720677591603,
+        "median_brl": 452.67,
+        "q25_brl": 332.0,
+        "q75_brl": 685.0
+      },
+      {
+        "group": "Cosme Velho",
+        "rows": 75,
+        "hosts": 46,
+        "priced_rows": 71,
+        "priced_hosts": 42,
+        "missing_price_rate": 0.05333333333333334,
+        "median_brl": 519.24,
+        "q25_brl": 339.0,
+        "q75_brl": 1027.15
+      },
+      {
+        "group": "Curicica",
+        "rows": 72,
+        "hosts": 52,
+        "priced_rows": 65,
+        "priced_hosts": 46,
+        "missing_price_rate": 0.09722222222222222,
+        "median_brl": 294.0,
+        "q25_brl": 212.0,
+        "q75_brl": 569.0
+      },
+      {
+        "group": "Engenho Novo",
+        "rows": 49,
+        "hosts": 20,
+        "priced_rows": 47,
+        "priced_hosts": 19,
+        "missing_price_rate": 0.04081632653061224,
+        "median_brl": 114.33,
+        "q25_brl": 91.315,
+        "q75_brl": 282.0
+      },
+      {
+        "group": "Engenho de Dentro",
+        "rows": 50,
+        "hosts": 35,
+        "priced_rows": 48,
+        "priced_hosts": 34,
+        "missing_price_rate": 0.04,
+        "median_brl": 399.0,
+        "q25_brl": 252.49,
+        "q75_brl": 580.2825
+      },
+      {
+        "group": "Estácio",
+        "rows": 58,
+        "hosts": 47,
+        "priced_rows": 56,
+        "priced_hosts": 45,
+        "missing_price_rate": 0.034482758620689655,
+        "median_brl": 316.765,
+        "q25_brl": 197.805,
+        "q75_brl": 481.9925
+      },
+      {
+        "group": "Flamengo",
+        "rows": 743,
+        "hosts": 608,
+        "priced_rows": 670,
+        "priced_hosts": 550,
+        "missing_price_rate": 0.09825033647375504,
+        "median_brl": 405.5,
+        "q25_brl": 293.10249999999996,
+        "q75_brl": 579.65
+      },
+      {
+        "group": "Freguesia (Jacarepaguá)",
+        "rows": 88,
+        "hosts": 71,
+        "priced_rows": 85,
+        "priced_hosts": 68,
+        "missing_price_rate": 0.03409090909090909,
+        "median_brl": 363.33,
+        "q25_brl": 224.3,
+        "q75_brl": 909.0
+      },
+      {
+        "group": "Gamboa",
+        "rows": 46,
+        "hosts": 28,
+        "priced_rows": 41,
+        "priced_hosts": 25,
+        "missing_price_rate": 0.10869565217391304,
+        "median_brl": 211.5,
+        "q25_brl": 142.65,
+        "q75_brl": 343.0
+      },
+      {
+        "group": "Glória",
+        "rows": 279,
+        "hosts": 220,
+        "priced_rows": 248,
+        "priced_hosts": 201,
+        "missing_price_rate": 0.1111111111111111,
+        "median_brl": 393.41499999999996,
+        "q25_brl": 288.4925,
+        "q75_brl": 607.0
+      },
+      {
+        "group": "Grajaú",
+        "rows": 57,
+        "hosts": 41,
+        "priced_rows": 53,
+        "priced_hosts": 38,
+        "missing_price_rate": 0.07017543859649122,
+        "median_brl": 308.0,
+        "q25_brl": 208.5,
+        "q75_brl": 446.0
+      },
+      {
+        "group": "Guaratiba",
+        "rows": 140,
+        "hosts": 109,
+        "priced_rows": 132,
+        "priced_hosts": 103,
+        "missing_price_rate": 0.05714285714285714,
+        "median_brl": 456.58500000000004,
+        "q25_brl": 221.25,
+        "q75_brl": 944.81
+      },
+      {
+        "group": "Gávea",
+        "rows": 189,
+        "hosts": 148,
+        "priced_rows": 168,
+        "priced_hosts": 133,
+        "missing_price_rate": 0.1111111111111111,
+        "median_brl": 605.0,
+        "q25_brl": 409.625,
+        "q75_brl": 1163.0125
+      },
+      {
+        "group": "Humaitá",
+        "rows": 152,
+        "hosts": 130,
+        "priced_rows": 131,
+        "priced_hosts": 115,
+        "missing_price_rate": 0.13815789473684212,
+        "median_brl": 514.0,
+        "q25_brl": 282.5,
+        "q75_brl": 834.9
+      },
+      {
+        "group": "Ipanema",
+        "rows": 2819,
+        "hosts": 1582,
+        "priced_rows": 2584,
+        "priced_hosts": 1461,
+        "missing_price_rate": 0.0833628946434906,
+        "median_brl": 696.225,
+        "q25_brl": 494.63,
+        "q75_brl": 1084.9325
+      },
+      {
+        "group": "Itanhangá",
+        "rows": 169,
+        "hosts": 98,
+        "priced_rows": 147,
+        "priced_hosts": 86,
+        "missing_price_rate": 0.1301775147928994,
+        "median_brl": 421.78,
+        "q25_brl": 206.505,
+        "q75_brl": 1997.25
+      },
+      {
+        "group": "Jacarepaguá",
+        "rows": 1294,
+        "hosts": 948,
+        "priced_rows": 1187,
+        "priced_hosts": 871,
+        "missing_price_rate": 0.08268933539412673,
+        "median_brl": 456.5,
+        "q25_brl": 304.32,
+        "q75_brl": 815.02
+      },
+      {
+        "group": "Jardim Botânico",
+        "rows": 156,
+        "hosts": 131,
+        "priced_rows": 137,
+        "priced_hosts": 117,
+        "missing_price_rate": 0.12179487179487179,
+        "median_brl": 638.0,
+        "q25_brl": 360.0,
+        "q75_brl": 1027.33
+      },
+      {
+        "group": "Jardim Guanabara",
+        "rows": 35,
+        "hosts": 24,
+        "priced_rows": 33,
+        "priced_hosts": 24,
+        "missing_price_rate": 0.05714285714285714,
+        "median_brl": 269.0,
+        "q25_brl": 217.0,
+        "q75_brl": 434.0
+      },
+      {
+        "group": "Joá",
+        "rows": 116,
+        "hosts": 43,
+        "priced_rows": 110,
+        "priced_hosts": 43,
+        "missing_price_rate": 0.05172413793103448,
+        "median_brl": 6961.35,
+        "q25_brl": 1485.375,
+        "q75_brl": 11412.0
+      },
+      {
+        "group": "Lagoa",
+        "rows": 191,
+        "hosts": 164,
+        "priced_rows": 178,
+        "priced_hosts": 153,
+        "missing_price_rate": 0.06806282722513089,
+        "median_brl": 799.0,
+        "q25_brl": 520.8525,
+        "q75_brl": 1197.98
+      },
+      {
+        "group": "Laranjeiras",
+        "rows": 423,
+        "hosts": 351,
+        "priced_rows": 373,
+        "priced_hosts": 316,
+        "missing_price_rate": 0.1182033096926714,
+        "median_brl": 428.0,
+        "q25_brl": 284.0,
+        "q75_brl": 677.33
+      },
+      {
+        "group": "Leblon",
+        "rows": 1461,
+        "hosts": 878,
+        "priced_rows": 1319,
+        "priced_hosts": 788,
+        "missing_price_rate": 0.0971937029431896,
+        "median_brl": 797.0,
+        "q25_brl": 569.4100000000001,
+        "q75_brl": 1206.03
+      },
+      {
+        "group": "Leme",
+        "rows": 705,
+        "hosts": 481,
+        "priced_rows": 634,
+        "priced_hosts": 427,
+        "missing_price_rate": 0.10070921985815603,
+        "median_brl": 480.25,
+        "q25_brl": 319.7525,
+        "q75_brl": 760.625
+      },
+      {
+        "group": "Maracanã",
+        "rows": 100,
+        "hosts": 77,
+        "priced_rows": 85,
+        "priced_hosts": 66,
+        "missing_price_rate": 0.15,
+        "median_brl": 342.67,
+        "q25_brl": 137.7,
+        "q75_brl": 685.0
+      },
+      {
+        "group": "Méier",
+        "rows": 47,
+        "hosts": 26,
+        "priced_rows": 44,
+        "priced_hosts": 23,
+        "missing_price_rate": 0.06382978723404255,
+        "median_brl": 146.465,
+        "q25_brl": 102.75,
+        "q75_brl": 284.75
+      },
+      {
+        "group": "Paquetá",
+        "rows": 42,
+        "hosts": 30,
+        "priced_rows": 37,
+        "priced_hosts": 28,
+        "missing_price_rate": 0.11904761904761904,
+        "median_brl": 399.5,
+        "q25_brl": 297.0,
+        "q75_brl": 685.0
+      },
+      {
+        "group": "Portuguesa",
+        "rows": 36,
+        "hosts": 16,
+        "priced_rows": 35,
+        "priced_hosts": 15,
+        "missing_price_rate": 0.027777777777777776,
+        "median_brl": 155.2,
+        "q25_brl": 145.0,
+        "q75_brl": 277.25
+      },
+      {
+        "group": "Praça da Bandeira",
+        "rows": 41,
+        "hosts": 34,
+        "priced_rows": 33,
+        "priced_hosts": 28,
+        "missing_price_rate": 0.1951219512195122,
+        "median_brl": 262.67,
+        "q25_brl": 206.0,
+        "q75_brl": 456.67
+      },
+      {
+        "group": "Recreio dos Bandeirantes",
+        "rows": 1703,
+        "hosts": 1208,
+        "priced_rows": 1603,
+        "priced_hosts": 1133,
+        "missing_price_rate": 0.058719906048150326,
+        "median_brl": 457.0,
+        "q25_brl": 297.75,
+        "q75_brl": 755.87
+      },
+      {
+        "group": "Rio Comprido",
+        "rows": 99,
+        "hosts": 62,
+        "priced_rows": 93,
+        "priced_hosts": 57,
+        "missing_price_rate": 0.06060606060606061,
+        "median_brl": 319.75,
+        "q25_brl": 194.0,
+        "q75_brl": 571.0
+      },
+      {
+        "group": "Rocinha",
+        "rows": 77,
+        "hosts": 50,
+        "priced_rows": 74,
+        "priced_hosts": 48,
+        "missing_price_rate": 0.03896103896103896,
+        "median_brl": 218.3,
+        "q25_brl": 161.2725,
+        "q75_brl": 340.125
+      },
+      {
+        "group": "Santa Cruz",
+        "rows": 42,
+        "hosts": 33,
+        "priced_rows": 38,
+        "priced_hosts": 31,
+        "missing_price_rate": 0.09523809523809523,
+        "median_brl": 203.0,
+        "q25_brl": 155.875,
+        "q75_brl": 298.9575
+      },
+      {
+        "group": "Santa Teresa",
+        "rows": 1271,
+        "hosts": 799,
+        "priced_rows": 1192,
+        "priced_hosts": 754,
+        "missing_price_rate": 0.06215578284815106,
+        "median_brl": 308.28,
+        "q25_brl": 206.0,
+        "q75_brl": 514.0
+      },
+      {
+        "group": "Santo Cristo",
+        "rows": 337,
+        "hosts": 255,
+        "priced_rows": 312,
+        "priced_hosts": 239,
+        "missing_price_rate": 0.07418397626112759,
+        "median_brl": 348.0,
+        "q25_brl": 275.06,
+        "q75_brl": 445.625
+      },
+      {
+        "group": "Saúde",
+        "rows": 54,
+        "hosts": 36,
+        "priced_rows": 52,
+        "priced_hosts": 35,
+        "missing_price_rate": 0.037037037037037035,
+        "median_brl": 249.64999999999998,
+        "q25_brl": 128.0025,
+        "q75_brl": 374.0
+      },
+      {
+        "group": "São Conrado",
+        "rows": 409,
+        "hosts": 349,
+        "priced_rows": 342,
+        "priced_hosts": 293,
+        "missing_price_rate": 0.16381418092909536,
+        "median_brl": 999.5,
+        "q25_brl": 656.5,
+        "q75_brl": 1742.0725
+      },
+      {
+        "group": "São Cristóvão",
+        "rows": 135,
+        "hosts": 91,
+        "priced_rows": 123,
+        "priced_hosts": 85,
+        "missing_price_rate": 0.08888888888888889,
+        "median_brl": 309.0,
+        "q25_brl": 202.25,
+        "q75_brl": 441.6
+      },
+      {
+        "group": "Taquara",
+        "rows": 103,
+        "hosts": 87,
+        "priced_rows": 97,
+        "priced_hosts": 81,
+        "missing_price_rate": 0.05825242718446602,
+        "median_brl": 343.0,
+        "q25_brl": 228.4,
+        "q75_brl": 617.0
+      },
+      {
+        "group": "Tijuca",
+        "rows": 319,
+        "hosts": 233,
+        "priced_rows": 293,
+        "priced_hosts": 213,
+        "missing_price_rate": 0.08150470219435736,
+        "median_brl": 304.5,
+        "q25_brl": 181.0,
+        "q75_brl": 531.0
+      },
+      {
+        "group": "Urca",
+        "rows": 97,
+        "hosts": 80,
+        "priced_rows": 90,
+        "priced_hosts": 74,
+        "missing_price_rate": 0.07216494845360824,
+        "median_brl": 473.83500000000004,
+        "q25_brl": 329.10749999999996,
+        "q75_brl": 852.7
+      },
+      {
+        "group": "Vargem Grande",
+        "rows": 104,
+        "hosts": 85,
+        "priced_rows": 98,
+        "priced_hosts": 80,
+        "missing_price_rate": 0.057692307692307696,
+        "median_brl": 533.75,
+        "q25_brl": 329.04999999999995,
+        "q75_brl": 880.675
+      },
+      {
+        "group": "Vargem Pequena",
+        "rows": 134,
+        "hosts": 90,
+        "priced_rows": 122,
+        "priced_hosts": 83,
+        "missing_price_rate": 0.08955223880597014,
+        "median_brl": 363.25,
+        "q25_brl": 220.5825,
+        "q75_brl": 900.25
+      },
+      {
+        "group": "Vidigal",
+        "rows": 349,
+        "hosts": 258,
+        "priced_rows": 315,
+        "priced_hosts": 235,
+        "missing_price_rate": 0.09742120343839542,
+        "median_brl": 374.31,
+        "q25_brl": 229.0,
+        "q75_brl": 768.51
+      },
+      {
+        "group": "Vila Isabel",
+        "rows": 107,
+        "hosts": 90,
+        "priced_rows": 101,
+        "priced_hosts": 85,
+        "missing_price_rate": 0.056074766355140186,
+        "median_brl": 342.5,
+        "q25_brl": 196.0,
+        "q75_brl": 514.0
+      }
+    ]
+  },
+  "concentration": {
+    "largest_one_percent_hosts_count": 180,
+    "share_priced_listings_from_largest_one_percent_hosts": 0.1697117208243773
+  },
+  "publication_rule": "Every published price group has >=30 priced rows and >=10 distinct priced hosts."
+}

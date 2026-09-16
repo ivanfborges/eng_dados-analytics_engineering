@@ -1,0 +1,34 @@
+{
+  "protocol": "rio-v1",
+  "source_hashes": {
+    "listings.csv.gz": "f4f5fb9389d3abdf89b73fcd26f0ad180c5b11447ca6f7580350deb165a916c2",
+    "neighbourhoods.geojson": "5659a536788718f57e749f90eeb911caab870b07674592df5b1d70df9fc1d2e2"
+  },
+  "counts": {
+    "train": {
+      "rows": 34557,
+      "hosts": 19455,
+      "eligible_rows": 31636,
+      "eligible_hosts": 17912
+    },
+    "validation": {
+      "rows": 7062,
+      "hosts": 4083,
+      "eligible_rows": 6391,
+      "eligible_hosts": 3699
+    },
+    "test": {
+      "rows": 7094,
+      "hosts": 4150,
+      "eligible_rows": 6515,
+      "eligible_hosts": 3827
+    }
+  },
+  "host_overlap": 0,
+  "artifacts": {
+    "assignments.csv": "d97be167cd78970e28334ba2c6d6abd1dd251a55cf2da6c535ceba1a186857e6",
+    "train.csv": "45dc4e377c77a2c907562f7e0e8fe321608222a3889063d5a589265dc536a52e"
+  },
+  "eligibility": "Finite positive price; missing predictors retained for training-only imputation.",
+  "test_status": "Reserved; no target summaries or model evaluation."
+}

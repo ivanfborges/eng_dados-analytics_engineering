@@ -44,7 +44,7 @@ No independent `head(1000)` sampling. Initial study uses all listings. If calend
 5. Secondary spatial stress test: on development data only, use five deterministic neighbourhood-group folds; purge training hosts appearing in each evaluation fold. Keep neighbourhoods intact, report training/evaluation coverage and acknowledge nearby-area dependence. This measures transfer to held-out neighbourhoods, not future time periods. Specify and freeze the neighbourhood-to-fold mapping before fitting in stage 3.3.
 6. Freeze features, transformations, hyperparameters and selection rule before evaluating the final host-held-out test once. That test supports same-snapshot unseen-host performance only. Future-price claims require separately acquired, temporally ordered snapshots and an entity-overlap policy.
 
-The split is specified here but **has not yet been created**. No model or performance result exists in this revision.
+Stage 3.2 update: the split is now created and frozen in [partition metadata](eda/partitions.json). Training-only EDA and spatial validation are documented in [EDA.md](EDA.md). The target-presence check establishes eligibility; missing predictors do not remove listings. No model has been trained and the final test is reserved.
 
 ## Source conditions and publication
 

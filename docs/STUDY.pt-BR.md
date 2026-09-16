@@ -44,7 +44,7 @@ Não usar `head(1000)` independente por tabela. O estudo inicial usa todos os an
 5. Teste espacial secundário: apenas nos dados de desenvolvimento, cinco folds determinísticos por grupos de bairros, retirando do treino anfitriões presentes no fold de avaliação. Manter bairros inteiros, relatar cobertura e reconhecer dependência entre áreas vizinhas. Avalia transferência para bairros separados, sem afirmar previsão temporal. Especificar e congelar a atribuição de bairros aos folds antes do treinamento na etapa 3.3.
 6. Congelar atributos, transformações, hiperparâmetros e regra de seleção antes de avaliar uma única vez o teste final separado por anfitrião. Esse teste sustenta apenas desempenho para anfitriões não vistos dentro do mesmo snapshot. Previsão futura exige novos snapshots ordenados no tempo e política de sobreposição de entidades.
 
-A divisão está especificada, mas **ainda não foi criada**. Esta revisão não contém modelo ou desempenho preditivo.
+Atualização 3.2: divisão criada e congelada nos [metadados](eda/partitions.json). A EDA somente do treino e a validação espacial estão em [EDA.pt-BR.md](EDA.pt-BR.md). A presença de alvo válido define elegibilidade; atributos ausentes não removem anúncios. Nenhum modelo foi treinado e o teste final está reservado.
 
 ## Condições e publicação
 
