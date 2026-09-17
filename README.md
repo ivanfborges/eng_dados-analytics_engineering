@@ -8,6 +8,10 @@ An applied data science study asking: **how well can property characteristics an
 
 The June 24, 2026 Inside Airbnb snapshot contains 48,713 listings and 27,688 hosts. Prices are present and positive for 44,542 listings; 4,171 lack a price. Snapshot labels are not observation timestamps: actual scrape dates range from June 25 to July 1. These are structural checks, not model results.
 
+## Try the interface
+
+Validate fictional inputs without private data, inspect example predictions, or run inference with the trusted local frozen artifact. See the [inference quickstart](docs/INFERENCE.md). No retraining is needed.
+
 ## Read the study
 
 - [Final held-out evaluation and limitations](docs/FINAL.md)
@@ -45,7 +49,7 @@ See the [EDA report](docs/EDA.md) for population limits, geometry repair, frozen
 
 This repository began as a postgraduate analytics engineering study using PostgreSQL, Docker, dbt, Great Expectations and notebooks. Those files remain available as historical material; their workflows have not been rerun or validated in this revision. The old importer independently reads the first 1,000 rows of each table, which does not guarantee representative or relationally consistent samples. The new study uses the complete listings snapshot and does not inherit that sampling procedure.
 
-The new analysis will separate hosts between training and evaluation, compare simple baselines with ML, and test whether geography adds useful predictive information. Spatial transfer will be assessed separately. There is no future-price forecast or causal claim in the current design.
+The completed study separates hosts between training and evaluation, compares two baselines and four ML candidates, and assesses geography through host and neighbourhood folds. The final model and its inference interface are frozen. There is no future-price forecast or causal claim in the current design.
 
 ## Data and limits
 

@@ -8,6 +8,10 @@ Estudo aplicado de Ciência de Dados: **quanto as características do imóvel e 
 
 O snapshot identificado como 24/06/2026 contém 48.713 anúncios e 27.688 anfitriões. Há 44.542 preços presentes e positivos e 4.171 ausentes. O nome do snapshot não é a data de cada observação: a coleta efetiva varia de 25/06 a 01/07. São verificações estruturais, não resultados de modelos.
 
+## Experimente a interface
+
+Valide entradas fictícias sem dados privados, consulte previsões ilustrativas ou execute inferência com o artefato local confiável e congelado. Veja o [guia de inferência](docs/INFERENCE.pt-BR.md). Não é necessário retreinar.
+
 ## Documentação
 
 - [Avaliação final e limitações](docs/FINAL.pt-BR.md)
@@ -45,7 +49,7 @@ O [relatório de EDA](docs/EDA.pt-BR.md) detalha limites da população, correç
 
 O projeto nasceu na pós-graduação em Engenharia de Dados, com PostgreSQL, Docker, dbt, Great Expectations e notebooks. Esses arquivos permanecem como material histórico; seus fluxos não foram reexecutados ou validados nesta revisão. O importador antigo lê as primeiras 1.000 linhas de cada tabela separadamente, sem garantir representatividade ou correspondência entre anúncios, avaliações e calendários. O novo estudo utiliza o snapshot completo de anúncios.
 
-A análise irá separar anfitriões entre treino e avaliação, comparar baselines com ML e medir a contribuição da geografia. A transferência espacial terá avaliação própria. O desenho atual não prevê preços futuros nem demonstra relações causais.
+O estudo concluído separa anfitriões entre treino e avaliação, compara dois baselines e quatro candidatos ML e avalia geografia em folds por anfitrião e bairro. O modelo final e sua interface de inferência usam o artefato congelado. O desenho atual não prevê preços futuros nem demonstra relações causais.
 
 ## Fonte e limites
 
