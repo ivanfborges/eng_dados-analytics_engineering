@@ -4,12 +4,13 @@
 
 Estudo aplicado de Ciência de Dados: **quanto as características do imóvel e a localização ajudam a estimar o preço anunciado por noite para anúncios de anfitriões ausentes do treino, dentro de um snapshot do Rio?**
 
-Estado: comparação de modelos e validação externa concluídas. HistGradientBoosting com geografia congelado: MAE de R$ 434,08 na validação, frente a R$ 548,00 do baseline por tipo. O teste final permanece reservado; não há implantação em produção.
+**Estado:** avaliação final concluída. HistGradientBoosting com geografia: MAE R$ 482,67 versus R$ 620,57 do baseline por tipo (redução de 22,22%). Teste final consumido; não há implantação em produção.
 
 O snapshot identificado como 24/06/2026 contém 48.713 anúncios e 27.688 anfitriões. Há 44.542 preços presentes e positivos e 4.171 ausentes. O nome do snapshot não é a data de cada observação: a coleta efetiva varia de 25/06 a 01/07. São verificações estruturais, não resultados de modelos.
 
 ## Documentação
 
+- [Avaliação final e limitações](docs/FINAL.pt-BR.md)
 - [Seleção, validação e limitações do modelo](docs/SELECTION.pt-BR.md)
 - [Baselines, incerteza e comparação planejada dos modelos](docs/BASELINES.pt-BR.md)
 - [Exploração do treino: resultados, mapas e reprodução](docs/EDA.pt-BR.md)

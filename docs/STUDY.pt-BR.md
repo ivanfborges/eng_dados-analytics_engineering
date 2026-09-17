@@ -1,3 +1,5 @@
+Atualização 17/09/2026: [avaliação final concluída](FINAL.pt-BR.md); teste final consumido. Referências abaixo ao teste reservado descrevem o estágio anterior de desenvolvimento.
+
 # Protocolo do estudo — versão 1, 16/09/2026
 
 [English](STUDY.md) · [Início](../README.pt-BR.md)

@@ -4,12 +4,13 @@
 
 An applied data science study asking: **how well can property characteristics and location estimate advertised nightly prices for listings from hosts unseen during training, within one Rio de Janeiro snapshot?**
 
-**Status:** model comparison and external validation complete. HistGradientBoosting with geography is frozen; validation MAE is BRL 434.08 versus BRL 548.00 for the room-type baseline. The final test remains reserved; no production deployment is claimed.
+**Status:** final held-out evaluation complete. Frozen HistGradientBoosting with geography achieved MAE BRL 482.67 versus BRL 620.57 for the room-type baseline (22.22% lower). Final test consumed; no production deployment is claimed.
 
 The June 24, 2026 Inside Airbnb snapshot contains 48,713 listings and 27,688 hosts. Prices are present and positive for 44,542 listings; 4,171 lack a price. Snapshot labels are not observation timestamps: actual scrape dates range from June 25 to July 1. These are structural checks, not model results.
 
 ## Read the study
 
+- [Final held-out evaluation and limitations](docs/FINAL.md)
 - [Model selection, validation and limitations](docs/SELECTION.md)
 - [Baselines, uncertainty and frozen model comparison](docs/BASELINES.md)
 - [Training exploration: findings, maps and reproducible execution](docs/EDA.md)

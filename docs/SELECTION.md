@@ -1,3 +1,5 @@
+Update 2026-09-17: [final evaluation completed](FINAL.md); final test consumed. Statements below about a reserved test describe the earlier development stage.
+
 # Model selection and external validation
 
 [Português](SELECTION.pt-BR.md) · [Protocol](baselines/protocol.json) · [Home](../README.md)

@@ -1,3 +1,5 @@
+Update 2026-09-17: [final evaluation completed](FINAL.md); final test consumed. Statements below about a reserved test describe the earlier development stage.
+
 # Study protocol — version 1, 2026-09-16
 
 [Português](STUDY.pt-BR.md) · [Home](../README.md)
