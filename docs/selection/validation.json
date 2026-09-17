@@ -1,0 +1,403 @@
+{
+  "candidate": "histgb_geo",
+  "rows": 6391,
+  "hosts": 3699,
+  "selected_artifact_sha256": "aa155a74ed7421a0fa536ad862d858b69bec76339a20a0831ff571101cb87421",
+  "metrics": {
+    "mae_brl": 434.0767077123062,
+    "median_absolute_error_brl": 123.54681469281303,
+    "rmse_brl": 2251.5023880596623,
+    "rmsle": 0.612418377727815,
+    "host_weighted_mae_brl": 418.3258714347265
+  },
+  "mae_host_bootstrap_95ci": [
+    365.90736847398153,
+    506.28546068717867
+  ],
+  "room_median_metrics": {
+    "mae_brl": 548.0024581442653,
+    "median_absolute_error_brl": 181.70999999999998,
+    "rmse_brl": 2460.7210819976185,
+    "rmsle": 0.8035464097294351,
+    "host_weighted_mae_brl": 522.3303308408586
+  },
+  "selected_minus_room_mae": -113.92575043195912,
+  "paired_delta_host_bootstrap_95ci": [
+    -144.249343438153,
+    -89.52868858335759
+  ],
+  "segments": {
+    "room_type": {
+      "groups": [
+        {
+          "group": "Entire home/apt",
+          "rows": 5127,
+          "hosts": 3094,
+          "metrics": {
+            "mae_brl": 457.3886917229749,
+            "median_absolute_error_brl": 126.33079570171122,
+            "rmse_brl": 2347.1281033340924,
+            "rmsle": 0.5654755655511401,
+            "host_weighted_mae_brl": 428.0737951478538
+          }
+        },
+        {
+          "group": "Private room",
+          "rows": 1180,
+          "hosts": 738,
+          "metrics": {
+            "mae_brl": 343.480384215945,
+            "median_absolute_error_brl": 119.43605860449182,
+            "rmse_brl": 1854.7507229583582,
+            "rmsle": 0.7520169970175536,
+            "host_weighted_mae_brl": 359.7420074173576
+          }
+        },
+        {
+          "group": "Shared room",
+          "rows": 83,
+          "hosts": 34,
+          "metrics": {
+            "mae_brl": 285.9283366949466,
+            "median_absolute_error_brl": 48.086721533844155,
+            "rmse_brl": 1062.1228018575225,
+            "rmsle": 1.041314104140116,
+            "host_weighted_mae_brl": 477.4351983757019
+          }
+        }
+      ],
+      "suppressed_groups": 1
+    },
+    "neighbourhood_cleansed": {
+      "groups": [
+        {
+          "group": "Barra da Tijuca",
+          "rows": 525,
+          "hosts": 328,
+          "metrics": {
+            "mae_brl": 574.2202092505516,
+            "median_absolute_error_brl": 155.71299684201358,
+            "rmse_brl": 2880.06862383902,
+            "rmsle": 0.5720117742935323,
+            "host_weighted_mae_brl": 658.1101449472736
+          }
+        },
+        {
+          "group": "Barra de Guaratiba",
+          "rows": 41,
+          "hosts": 22,
+          "metrics": {
+            "mae_brl": 380.1845552640156,
+            "median_absolute_error_brl": 158.21557625510775,
+            "rmse_brl": 694.4044391820878,
+            "rmsle": 0.5763794333566136,
+            "host_weighted_mae_brl": 398.01125494058994
+          }
+        },
+        {
+          "group": "Botafogo",
+          "rows": 266,
+          "hosts": 187,
+          "metrics": {
+            "mae_brl": 200.80609977331153,
+            "median_absolute_error_brl": 129.56903076849306,
+            "rmse_brl": 336.20884261159466,
+            "rmsle": 0.5395237424057868,
+            "host_weighted_mae_brl": 202.00995241925872
+          }
+        },
+        {
+          "group": "Camorim",
+          "rows": 118,
+          "hosts": 53,
+          "metrics": {
+            "mae_brl": 184.4871689196186,
+            "median_absolute_error_brl": 88.11337038665181,
+            "rmse_brl": 445.0051073701428,
+            "rmsle": 0.5279700450892444,
+            "host_weighted_mae_brl": 179.1731616106012
+          }
+        },
+        {
+          "group": "Catete",
+          "rows": 59,
+          "hosts": 43,
+          "metrics": {
+            "mae_brl": 273.08029068167036,
+            "median_absolute_error_brl": 102.96310675354104,
+            "rmse_brl": 629.5547091664575,
+            "rmsle": 0.8320005296990622,
+            "host_weighted_mae_brl": 223.1301572257761
+          }
+        },
+        {
+          "group": "Centro",
+          "rows": 446,
+          "hosts": 285,
+          "metrics": {
+            "mae_brl": 136.05818732428938,
+            "median_absolute_error_brl": 68.49690791267466,
+            "rmse_brl": 485.25110724363185,
+            "rmsle": 0.4848604138243335,
+            "host_weighted_mae_brl": 160.60383983610706
+          }
+        },
+        {
+          "group": "Copacabana",
+          "rows": 1932,
+          "hosts": 1108,
+          "metrics": {
+            "mae_brl": 436.34467562836716,
+            "median_absolute_error_brl": 115.26007242338079,
+            "rmse_brl": 2937.5481580249766,
+            "rmsle": 0.5912445514303571,
+            "host_weighted_mae_brl": 419.23170424367726
+          }
+        },
+        {
+          "group": "Flamengo",
+          "rows": 132,
+          "hosts": 111,
+          "metrics": {
+            "mae_brl": 269.0872376538353,
+            "median_absolute_error_brl": 99.84654515237557,
+            "rmse_brl": 734.4205776244257,
+            "rmsle": 0.5594691149881851,
+            "host_weighted_mae_brl": 280.9933755908921
+          }
+        },
+        {
+          "group": "Glória",
+          "rows": 59,
+          "hosts": 46,
+          "metrics": {
+            "mae_brl": 250.541223972582,
+            "median_absolute_error_brl": 109.86331775711679,
+            "rmse_brl": 561.8790216864984,
+            "rmsle": 0.7762001954485005,
+            "host_weighted_mae_brl": 228.21786904700065
+          }
+        },
+        {
+          "group": "Guaratiba",
+          "rows": 33,
+          "hosts": 26,
+          "metrics": {
+            "mae_brl": 200.4042430262011,
+            "median_absolute_error_brl": 125.42416781431257,
+            "rmse_brl": 281.34352476292776,
+            "rmsle": 0.5944476455403069,
+            "host_weighted_mae_brl": 204.1571534941813
+          }
+        },
+        {
+          "group": "Gávea",
+          "rows": 34,
+          "hosts": 28,
+          "metrics": {
+            "mae_brl": 693.518365848764,
+            "median_absolute_error_brl": 235.5473994945645,
+            "rmse_brl": 1380.9254573726062,
+            "rmsle": 0.7074253174065167,
+            "host_weighted_mae_brl": 807.7994267399052
+          }
+        },
+        {
+          "group": "Humaitá",
+          "rows": 40,
+          "hosts": 32,
+          "metrics": {
+            "mae_brl": 277.3459755085669,
+            "median_absolute_error_brl": 162.6867965904048,
+            "rmse_brl": 402.2567429813529,
+            "rmsle": 0.6153552039216968,
+            "host_weighted_mae_brl": 288.51716621951823
+          }
+        },
+        {
+          "group": "Ipanema",
+          "rows": 543,
+          "hosts": 308,
+          "metrics": {
+            "mae_brl": 596.9869805461145,
+            "median_absolute_error_brl": 205.53073181672107,
+            "rmse_brl": 2132.9906252760916,
+            "rmsle": 0.596229265498961,
+            "host_weighted_mae_brl": 609.4418188943637
+          }
+        },
+        {
+          "group": "Jacarepaguá",
+          "rows": 238,
+          "hosts": 169,
+          "metrics": {
+            "mae_brl": 256.9593399997724,
+            "median_absolute_error_brl": 101.59782409204881,
+            "rmse_brl": 509.44560220123685,
+            "rmsle": 0.5288483164871517,
+            "host_weighted_mae_brl": 310.3641403835813
+          }
+        },
+        {
+          "group": "Joá",
+          "rows": 30,
+          "hosts": 16,
+          "metrics": {
+            "mae_brl": 3202.4480072487722,
+            "median_absolute_error_brl": 1653.4068021899022,
+            "rmse_brl": 4943.75518975185,
+            "rmsle": 0.7073801688704101,
+            "host_weighted_mae_brl": 2903.44701574496
+          }
+        },
+        {
+          "group": "Lagoa",
+          "rows": 43,
+          "hosts": 42,
+          "metrics": {
+            "mae_brl": 1056.1998697664842,
+            "median_absolute_error_brl": 240.69189309617832,
+            "rmse_brl": 2942.3489080893182,
+            "rmsle": 0.8218740344112172,
+            "host_weighted_mae_brl": 1071.0419962840683
+          }
+        },
+        {
+          "group": "Laranjeiras",
+          "rows": 81,
+          "hosts": 69,
+          "metrics": {
+            "mae_brl": 429.0940516773295,
+            "median_absolute_error_brl": 112.0715721057742,
+            "rmse_brl": 1934.3159127536405,
+            "rmsle": 0.7133050275584465,
+            "host_weighted_mae_brl": 479.49450322322116
+          }
+        },
+        {
+          "group": "Leblon",
+          "rows": 204,
+          "hosts": 145,
+          "metrics": {
+            "mae_brl": 601.1860591969407,
+            "median_absolute_error_brl": 251.66966270541545,
+            "rmse_brl": 1865.531295787684,
+            "rmsle": 0.6101295592048569,
+            "host_weighted_mae_brl": 738.7429966365073
+          }
+        },
+        {
+          "group": "Leme",
+          "rows": 107,
+          "hosts": 87,
+          "metrics": {
+            "mae_brl": 474.91837630338705,
+            "median_absolute_error_brl": 120.97387566989536,
+            "rmse_brl": 2220.303377098058,
+            "rmsle": 0.5772561232415344,
+            "host_weighted_mae_brl": 533.1596977563011
+          }
+        },
+        {
+          "group": "Recreio dos Bandeirantes",
+          "rows": 336,
+          "hosts": 257,
+          "metrics": {
+            "mae_brl": 344.9495897311555,
+            "median_absolute_error_brl": 140.764545499373,
+            "rmse_brl": 823.7737567623872,
+            "rmsle": 0.7263807026074057,
+            "host_weighted_mae_brl": 364.84226909968544
+          }
+        },
+        {
+          "group": "Santa Teresa",
+          "rows": 204,
+          "hosts": 152,
+          "metrics": {
+            "mae_brl": 263.9006792299709,
+            "median_absolute_error_brl": 106.87245319582951,
+            "rmse_brl": 813.0327792264216,
+            "rmsle": 0.7035557896012354,
+            "host_weighted_mae_brl": 224.13132764233768
+          }
+        },
+        {
+          "group": "Santo Cristo",
+          "rows": 77,
+          "hosts": 56,
+          "metrics": {
+            "mae_brl": 101.38897836361855,
+            "median_absolute_error_brl": 58.26364431472848,
+            "rmse_brl": 156.50586536859973,
+            "rmsle": 0.3682044229744407,
+            "host_weighted_mae_brl": 110.68674704898646
+          }
+        },
+        {
+          "group": "São Conrado",
+          "rows": 104,
+          "hosts": 72,
+          "metrics": {
+            "mae_brl": 1810.681845560093,
+            "median_absolute_error_brl": 348.22935210928796,
+            "rmse_brl": 5275.149626377935,
+            "rmsle": 0.6714805303086163,
+            "host_weighted_mae_brl": 1547.1582337317068
+          }
+        },
+        {
+          "group": "Tijuca",
+          "rows": 49,
+          "hosts": 34,
+          "metrics": {
+            "mae_brl": 904.0133286065304,
+            "median_absolute_error_brl": 101.1353537703555,
+            "rmse_brl": 5431.946978882874,
+            "rmsle": 0.8372076973330561,
+            "host_weighted_mae_brl": 1249.8919418193102
+          }
+        },
+        {
+          "group": "Urca",
+          "rows": 33,
+          "hosts": 22,
+          "metrics": {
+            "mae_brl": 260.814704903536,
+            "median_absolute_error_brl": 102.13453090935025,
+            "rmse_brl": 795.1415690753959,
+            "rmsle": 0.50625346489204,
+            "host_weighted_mae_brl": 349.1281609141642
+          }
+        },
+        {
+          "group": "Vargem Pequena",
+          "rows": 37,
+          "hosts": 18,
+          "metrics": {
+            "mae_brl": 416.1860224334643,
+            "median_absolute_error_brl": 442.38808131291603,
+            "rmse_brl": 517.1662269908054,
+            "rmsle": 1.0138619285613686,
+            "host_weighted_mae_brl": 270.05106167072813
+          }
+        },
+        {
+          "group": "Vidigal",
+          "rows": 66,
+          "hosts": 42,
+          "metrics": {
+            "mae_brl": 155.3528756989188,
+            "median_absolute_error_brl": 92.3961490399565,
+            "rmse_brl": 266.587178594702,
+            "rmsle": 0.47835183294719524,
+            "host_weighted_mae_brl": 198.12375877987216
+          }
+        }
+      ],
+      "suppressed_groups": 90
+    }
+  },
+  "test_status": "Final test untouched. Validation not used to re-rank candidates.",
+  "private_predictions_sha256": "5593f8672eae3df661e051e4c935f6c1287119234bcd43cbf749176424e4aade"
+}

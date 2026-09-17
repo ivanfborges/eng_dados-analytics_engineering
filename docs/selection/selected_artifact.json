@@ -1,0 +1,19 @@
+{
+  "candidate": "histgb_geo",
+  "model_sha256": "a68512f4942bf396ccd0452496edd409334827043416927272d42512161d3a32",
+  "decision_sha256": "7c3f6bda899363262ddf6a5834d24740c4db3cec0a7faa1feefaa259cf1316b0",
+  "training_rows": 31636,
+  "fit_scope": "Outer training partition only; no train+validation refit.",
+  "run": {
+    "protocol_sha256": "c34826d1464c7accf520b71af14b0c5165c1e7d4db92a9a7d837ceac88a584ca",
+    "training_sha256": "45dc4e377c77a2c907562f7e0e8fe321608222a3889063d5a589265dc536a52e",
+    "models_code_sha256": "00527e8bd221ee46f3d4369e7b48751f6fd48349f1a7e892ef62abf2a468948b",
+    "lock_sha256": "1d2b51409954e39befe6413f656cd809b9b843281b777f4dc60d4bec8162b48b",
+    "versions": {
+      "python": "3.11.14",
+      "sklearn": "1.9.1",
+      "numpy": "2.4.6",
+      "pandas": "3.0.5"
+    }
+  }
+}

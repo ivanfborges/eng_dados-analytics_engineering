@@ -22,7 +22,7 @@ def main():
     ax.set_xlabel('Training out-of-fold MAE (BRL; lower is better)')
     ax.set_title('Rio Airbnb | frozen candidate comparison')
     ax.spines[['top','right']].set_visible(False)
-    ax.legend(loc='lower right')
+    ax.legend(loc='upper center', bbox_to_anchor=(.5,-.13), ncol=1)
     ax.set_xlim(0,1.2*max(report['evaluations'][mode]['pooled_metrics'][name]['mae_brl'] for mode in ['host','spatial'] for name in names))
     fig.savefig(root/'reports/generated/selection/comparison.png',dpi=180)
     plt.close(fig)

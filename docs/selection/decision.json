@@ -1,0 +1,16 @@
+{
+  "candidate": "histgb_geo",
+  "run": {
+    "protocol_sha256": "c34826d1464c7accf520b71af14b0c5165c1e7d4db92a9a7d837ceac88a584ca",
+    "training_sha256": "45dc4e377c77a2c907562f7e0e8fe321608222a3889063d5a589265dc536a52e",
+    "models_code_sha256": "00527e8bd221ee46f3d4369e7b48751f6fd48349f1a7e892ef62abf2a468948b",
+    "lock_sha256": "1d2b51409954e39befe6413f656cd809b9b843281b777f4dc60d4bec8162b48b",
+    "versions": {
+      "python": "3.11.14",
+      "sklearn": "1.9.1",
+      "numpy": "2.4.6",
+      "pandas": "3.0.5"
+    }
+  },
+  "comparison_sha256": "20f3c9293318da4d79d32ae5eb8570dc70fcc596b39d053b5e4f2bafc56dea5b"
+}
