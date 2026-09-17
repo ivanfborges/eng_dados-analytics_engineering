@@ -18,7 +18,7 @@ python -m unittest discover -s tests -v
 python -m rio.predict --input examples/fictional_listings.csv --check-input
 ```
 
-Expected: 45 tests pass and `valid_cases: 3`. The tests use synthetic fixtures. Schema validation loads no model, raw snapshot or partition files. Read the public [illustrative predictions](../examples/fictional_predictions.csv) alongside their [fictional inputs](../examples/fictional_listings.csv). These three cases were invented for this interface; none was copied from an actual listing. They have no observed target, so they provide no accuracy evidence.
+Expected: 46 tests pass and `valid_cases: 3`. The tests use synthetic fixtures. Schema validation loads no model, raw snapshot or partition files. Read the public [illustrative predictions](../examples/fictional_predictions.csv) alongside their [fictional inputs](../examples/fictional_listings.csv). These three cases were invented for this interface; none was copied from an actual listing. They have no observed target, so they provide no accuracy evidence.
 
 ## Full inference: trusted local artifact required
 
@@ -52,3 +52,5 @@ The first two examples illustrate ordinary property fields; the third deliberate
 ## Interpretation and limits
 
 These estimates describe a single Rio snapshot, not future prices, transactions, revenue or optimal pricing. The final holdout MAE was BRL 482.67 (95% host-bootstrap interval 366.38–632.28), versus BRL 620.57 for the room-type baseline. This is an aggregate error measure, **not** a prediction interval for a new property. Errors vary substantially by segment and high-price outliers remain difficult. No production suitability or uncertainty guarantee for an individual prediction is established. See the [full final report](FINAL.md).
+
+Checkout integrity: `.gitattributes` preserves the protocol's original CRLF bytes because its frozen hash was recorded in that form. This changes no protocol content or experimental decision. A regression test checks that hash in fresh checkouts.

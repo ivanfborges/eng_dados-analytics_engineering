@@ -18,7 +18,7 @@ python -m unittest discover -s tests -v
 python -m rio.predict --input examples/fictional_listings.csv --check-input
 ```
 
-Resultado esperado: 45 testes aprovados e `valid_cases: 3`. Os testes usam dados sintéticos. A validação de entrada não carrega modelo, snapshot ou partições. Compare as [previsões ilustrativas](../examples/fictional_predictions.csv) com as [entradas fictícias](../examples/fictional_listings.csv). Os três casos foram inventados para esta interface, sem copiar anúncios reais. Não possuem preço observado e não demonstram acurácia.
+Resultado esperado: 46 testes aprovados e `valid_cases: 3`. Os testes usam dados sintéticos. A validação de entrada não carrega modelo, snapshot ou partições. Compare as [previsões ilustrativas](../examples/fictional_predictions.csv) com as [entradas fictícias](../examples/fictional_listings.csv). Os três casos foram inventados para esta interface, sem copiar anúncios reais. Não possuem preço observado e não demonstram acurácia.
 
 ## Inferência completa: exige artefato local confiável
 
@@ -52,3 +52,5 @@ Os dois primeiros exemplos ilustram características usuais; o terceiro exercita
 ## Interpretação e limites
 
 As estimativas descrevem um snapshot do Rio, não preços futuros, transações, receita ou preço ótimo. No teste final, o MAE foi R$ 482,67 (intervalo de bootstrap por anfitrião de 95%: 366,38–632,28), contra R$ 620,57 do baseline por tipo. Esse é um erro agregado, **não** um intervalo de previsão para um imóvel novo. Os erros variam bastante entre segmentos e valores extremos continuam difíceis. Não há comprovação de adequação à produção ou garantia de incerteza individual. Consulte o [relatório final completo](FINAL.pt-BR.md).
+
+Integridade do checkout: `.gitattributes` preserva os bytes CRLF originais do protocolo, pois o hash congelado foi registrado nesse formato. Nenhum conteúdo ou decisão experimental foi alterado. Um teste de regressão confere esse hash em novos checkouts.

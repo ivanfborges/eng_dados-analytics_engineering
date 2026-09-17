@@ -54,6 +54,11 @@ class PredictionTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 read_input(self.path)
 
+    def test_checkout_preserves_frozen_protocol_bytes(self):
+        from rio.final_evaluation import read, require_hash
+        artifact = read(ROOT / 'docs/selection/selected_artifact.json')
+        require_hash(ROOT / 'docs/baselines/protocol.json', artifact['run']['protocol_sha256'])
+
     def test_wrong_hash_rejected_before_deserialization(self):
         self.path.write_bytes(b'not a model')
         with patch('rio.predict.joblib.load') as deserialize:

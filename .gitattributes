@@ -4,3 +4,6 @@ requirements-model-lock.txt text eol=lf
 docs/selection/*.json text eol=lf
 rio/final_evaluation.py text eol=lf
 docs/final/*.json text eol=lf
+
+# The frozen protocol hash was recorded with CRLF; preserve those exact bytes.
+docs/baselines/protocol.json text eol=crlf
