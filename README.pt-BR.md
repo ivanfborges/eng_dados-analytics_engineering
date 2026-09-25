@@ -16,7 +16,7 @@ Valide entradas fictícias sem dados privados, consulte previsões ilustrativas 
 
 - [Avaliação final e limitações](docs/FINAL.pt-BR.md)
 - [Seleção, validação e limitações do modelo](docs/SELECTION.pt-BR.md)
-- [Baselines, incerteza e comparação planejada dos modelos](docs/BASELINES.pt-BR.md)
+- [Baselines, incerteza e comparação congelada dos modelos](docs/BASELINES.pt-BR.md)
 - [Exploração do treino: resultados, mapas e reprodução](docs/EDA.pt-BR.md)
 - [Protocolo, contrato de dados e avaliação](docs/STUDY.pt-BR.md)
 - [Manifesto da fonte e auditoria estrutural](docs/snapshot.json)
